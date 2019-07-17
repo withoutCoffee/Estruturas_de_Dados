@@ -12,4 +12,3 @@ int main(){
     printf("%i",pilha.arr[pilha.top]);
     return 0;
 }
-1;
