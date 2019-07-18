@@ -3,9 +3,9 @@
 #include <stdlib.h>
 
 /*função de inicialização da pilha*/
-void iniStack(myStack *s,int s){
+void iniStack(myStack *s,int n){
     s->top=-1;
-    s->arr = (int*) malloc(sizeof(int)*s);
+    s->arr = (int*) malloc(sizeof(int)*n);
 }
 /*função para inserir conteúdo na pilha (inteiros)*/
 void push(myStack *s, int n){
