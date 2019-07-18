@@ -14,7 +14,7 @@ typedef struct{
 
 }myStack;
 
-void iniStack(myStack *s,int s);/*incializa a pilha*/
+void iniStack(myStack *s,int n);/*incializa a pilha*/
 void push(myStack *s, int n);/*adiciona elemento*/
 int pop(myStack *s);/*retira do topo*/
 void clearStack(myStack *s);/*limpa com free e coloca top =-1*/
