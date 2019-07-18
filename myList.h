@@ -8,14 +8,14 @@
  * Descrição Geral: [Modulo com objetivo de estudo sobre estrutura de dados]
 ****/
 /*Lista implementada com array*/
-typedef struct(){
+typedef struct{
     int *arr;
-    int size;
+    int siz;
     int last;
 
 }myList;
 
-void iniList(myList *l);/*incializa a lista*/
+void iniList(myList *l,int sizee);/*incializa a lista*/
 void append(myList *l,int n);
 void prepend(myList *l,int n);
 
