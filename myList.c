@@ -3,7 +3,7 @@
 #include "myList.h"
 
 /*Copia tudo da lista para uma lista aux com 2x tamanho maior*/
-void cloneList(myList *l){
+void cloneList(myLis t *l){
     int i=0;
     int *aux = (int*) malloc(sizeof(int)*l->siz*2);/*Cria espaço na memória heap*/
 
