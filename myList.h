@@ -19,7 +19,7 @@ void iniList(myList *l,int sizee);/*incializa a lista*/
 
 void append(myList *l,int n);/*Adiciona item ao final da lista*/
 void prepend(myList *l,int n);/*Adiciona item ao inicio da lista*/
-void insertAfter(myList *l, int indice);/*Adiciona n meio da lista*/
+void insertAfterinList(myList *l, int indice, int n);/*Adiciona n meio da lista*/
 void deleteItem(myList *l, int indice);/*Deleta item da lista*/
 
 

@@ -3,7 +3,7 @@
 #include "myList.h"
 
 /*Copia tudo da lista para uma lista aux com 2x tamanho maior*/
-void cloneList(myLis t *l){
+void cloneList(myList *l){
     int i=0;
     int *aux = (int*) malloc(sizeof(int)*l->siz*2);/*Cria espaço na memória heap*/
 
@@ -52,19 +52,24 @@ void insertAfterinList(myList *l, int indice, int n){
     if(indice == l->siz-1){
         cloneList(l);
         l->arr[++l->last] = n;
-    }else if(l->last+1==l->siz-1){
+
+    }else if(l->last+1 == l->siz-1){
         cloneList(l);
         int i=0;
-        for(i=l->last; i<indice;i--){
-            l->arr[i+1]=l->arr[i];
+
+        for(i=l->last; i>indice; i--){
+
+            l->arr[i+1] = l->arr[i];
         }
         l->arr[indice+1] = n;
+        ++l->last;
     }else{
         int i=0;
-        for(i=l->last; i<indice;i--){
+        for(i=l->last; i>indice; i--){
             l->arr[i+1]=l->arr[i];
         }
         l->arr[indice+1] = n;
+        ++l->last;
     }
 
 }
@@ -75,7 +80,7 @@ void deleteItem(myList *l, int indice){
         l->arr[indice] = NULL;
     }else{
         int i=0;
-        for(i=indice; i< l->last;i++){
+        for(i=indice; i<l->last;i++){
             l->arr[i]=l->arr[i+1];
         }
     }
