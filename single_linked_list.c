@@ -1,12 +1,14 @@
 #include "single_linked_list.h"
+#define NULL 0
 /*função para inserr na lista simplesmente encadeada*/
 void append_SLList(struct Node** n, int value){
     if(!*n){
         *n = (struct Node*) malloc(sizeof(struct Node));
-        *n->value = value;
-        *n->next = NULL;
+
+        (*n)->value = value;
+        (*n)->next = NULL;
     }else{
-        struct None* aux = *n;
+        struct Node* aux = *n;
         while(aux->next){
             aux = aux->next;
         }
@@ -16,12 +18,13 @@ void append_SLList(struct Node** n, int value){
     }
 
 }
-void print_list(struct **node){
-    struct None *aux = *n;
+void print_list(struct Node** n){
+    struct Node *aux = *n;
     while(aux->next){
-        pritnf("%i\n",aux->value);
+        printf("Value:%i\n",aux->value);
         aux = aux->next;
     }
+    printf("Value:%i\n",aux->value);
 }
 /*função para inserir no inicio da lista simplesmente encadeada*/
 
