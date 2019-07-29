@@ -6,7 +6,7 @@ Minhas Implementações das estruturas de dados clássicas, estudadas na discipl
 - [x] Usando Array 
 * **Lista**  
 - [x] Usando Array
-- [ ] Usando Lista Simplesmente Encadeada
+- [x] Usando Lista Simplesmente Encadeada
 * **Fila**
 - [ ] Usando Array
 - [ ] Usando Lista Simplesmente Encadeada
