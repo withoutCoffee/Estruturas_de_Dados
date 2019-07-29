@@ -1,6 +1,6 @@
 #include "single_linked_list.h"
 #define NULL 0
-/*função para inserr na lista simplesmente encadeada*/
+/*Função para inserir na lista simplesmente encadeada*/
 void append_SLList(struct Node** n, int value){
     if(!*n){
         *n = (struct Node*) malloc(sizeof(struct Node));
